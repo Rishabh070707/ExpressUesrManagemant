@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashbored</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/admin/css/dash.css">
+</head>
+<body>
+    <%-include('../../partails/admin/header.ejs')%>
+    <section id="mid">
+        <div class="inner-mid">
+            <%-include('../../partails/admin/left.ejs')%>
+            <div class="right">
+
+
+
+                <h2>
+                    User login managemant
+                </h2>
+                <br>
+
+                <table class="table table-hover">
+                    <tr>
+                        <th>Sno.</th>
+                        <th>User</th>
+                        <th>Password</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Img</th>
+                        <th>Status</th>
+                        <th>Roles</th>
+                        <th>Action</th>
+                    </tr>
+                    <%record.forEach((result,key)=>{%>
+                        <tr>
+                            <td><%=key+1%></td>
+                            <td><%=result.user%></td>
+                            <td><%=result.password%></td>
+                            <td><%=result.firstname%></td>
+                            <td><%=result.lastname%></td>
+                            <td><img src="/frontend/upload/<%=result.img%>" style="width: 100px;" alt=""></td>
+                            <%if(result.status=='active'){%>
+                                <td><a href="/admin/userstatus/<%=result.id%>"><%=result.status%></a></td>
+                            <%}else{%>
+                                <td><a href="/admin/userstatus/<%=result.id%>" style="background: yellowgreen;"><%=result.status%></a></td>
+                            <%}%>
+                            <%if(result.role=='public'){%>
+                                <td><a href="/admin/userrole/<%=result.id%>"><%=result.role%></a></td>
+                            <%}else{%>
+                                <td><a href="/admin/userrole/<%=result.id%>"style="background: yellowgreen;"><%=result.role%></a></td>
+                            <%}%>
+                            <td><a href="/admin/userdelete/<%=result.id%>">Delete</a></td>
+                        </tr>
+                   <% })%>
+                </table>
+            </div>
+        </div>
+    </section>
+    <%-include('../../partails/admin/footer.ejs')%>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<section id="footer">
+    <img src="media/border2.png" alt="" id="footer-border">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="media/logo.png" alt="" id="footerlog">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo velit qui accusantium architecto
+            laboriosam esse temporibus voluptatum minima magnam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit veritatis, beatae quas quia
+            delectus.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Indigo Pvt. LTD.</h2>
+          <p><span><i class="bi bi-house"></i></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+            fugit mollitia dolore repellat saepe quam!</p>
+          <p><span><i class="bi bi-phone"></i></span> +91-545454545</p>
+          <p><span><i class="bi bi-telephone"></i></span> 0141-27373777</p>
+        </div>
+        <%if(use!=='notforyou'){%>
+          <div class="col-md-4">
+            <form action="/userquery" method="post">
+              <h2>Query form</h2>
+              <input type="email" name="email" id="" placeholder="Enter Email" class="form-control" required>
+              <textarea name="query" id="" placeholder="Enter Query" class="form-control mt-2 mb-2" required></textarea>
+              <button type="submit" class="form-control btn btn-success">Post Query</button>
+            </form>
+          </div>
+          <%}%>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <img src="media/instagram-icon.png" alt="">
+          <img src="media/linkedin-icon.png" alt="">
+          <img src="media/twitter-icon.png" alt="">
+          <img src="media/snapchat-icon.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>

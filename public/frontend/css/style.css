@@ -1,0 +1,119 @@
+#header{
+    background: linear-gradient(to right,rgb(27,8,160), rgb(12,3,73));
+    padding: 10px 0px;
+}
+#header ul li a{
+    color:white;
+    transition-property: color;
+    transition-duration: 2s;
+}
+#header ul li a:hover{
+    color: rgb(193,192,206);
+}
+#header img{
+    width:100px;
+}
+#header .bi-list{
+    color:white;
+    font-size: 20px;
+}
+#header .navbar-toggler{
+    border:1px solid white;
+}
+#header .container-fluid{
+    padding: 0px 0px;
+}
+#banner{
+    background: linear-gradient(to right,rgb(27,8,160), rgb(12,3,73));
+    padding-top: 20px;
+
+}
+#banner h4{
+    text-align: center;
+    font-family: 'Ms Madi', cursive;
+    color:white;
+    padding-bottom: 6px;
+    
+}
+#banner p{
+    color:white;
+}
+#banner #img-banner{
+    width: 150px;
+    border-radius: 50%;
+}
+#banner img{
+    width: 100%;
+}
+#services .card{
+    border: 0px solid yellow;
+}
+#services img{
+    width: 150px;
+}
+#services h2{
+    text-align: center;
+    font-family: 'Ms Madi', cursive;
+    font-size: 50px;
+}
+
+#footer{
+    background: linear-gradient(to right,rgb(27,8,160), rgb(12,3,73));
+}
+#footer #footer-border{
+    width: 100%;
+}
+#footer img{
+    width: 60px;
+}
+#footer h2{
+    font-family: 'Ms Madi', cursive;
+    color:white;
+}
+#footer span{
+    font-size: 25px;
+    color:white;
+}
+#footer p{
+    font-size: 15px;
+    color:white;
+}
+#footer #footerlog{
+    width: 100px;
+}
+#testi h2{
+    text-align: center;
+    font-family: 'Ms Madi', cursive;
+    font-size: 50px;
+
+}
+
+input[type=submit]{
+    width: 100%;
+    background: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+input[type=submit]:hover{
+    transition: .3s linear !important;
+    background: black !important;
+    color: white !important;
+}
+
+button {
+    width: 100%;
+    background: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+button:hover{
+    transition: .3s linear !important;
+    background: black !important;
+    color: white !important;
+}
